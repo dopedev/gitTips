@@ -1,7 +1,9 @@
 How to add project to existing repo?
 git init
+git remote add origin <repo-url>
+git branch -M master // this renames "master" from "main"
 git add .
 git commit -m "msg"
-git remote add origin <repo-url>
-git push -u origin master
+git push --set-upstream origin master
 
+git push -u origin master // if git push rejected "non-fast-forward"-
