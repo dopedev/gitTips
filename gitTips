@@ -7,3 +7,10 @@ git commit -m "msg"
 git push --set-upstream origin master
 
 git push -u origin master // if git push rejected "non-fast-forward"-
+
+
+How to pull latest changes from repo in local IDE without pushing own code to repo first?
+
+git stash save
+git pull
+git stash apply
